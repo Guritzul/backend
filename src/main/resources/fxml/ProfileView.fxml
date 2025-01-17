@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.frontend.controller.ProfileController" alignment="CENTER" spacing="10">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <Label text="Profile View"/>
+    <Label fx:id="userDetailsLabel"/>
+    <Button text="Back to Dashboard" onAction="#goBackToDashboard"/>
+</VBox>

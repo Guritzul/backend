@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.frontend.controller.SortingController" alignment="CENTER" spacing="10">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <Label fx:id="algorithmNameLabel" text="Quick Sort" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Speed:"/>
+        <Slider fx:id="speedSlider" min="0.1" max="2.0" value="1.0" blockIncrement="0.1"/>
+        <Label text="Number of Elements:"/>
+        <Slider fx:id="elementsSlider" min="5" max="50" value="10" blockIncrement="1"/>
+    </HBox>
+    <HBox fx:id="arrayContainer" spacing="5" alignment="CENTER"/>
+    <Button text="Start Sorting" onAction="#startSorting"/>
+    <Label fx:id="algorithmDescriptionLabel" text="Quick Sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays." wrapText="true" style="-fx-padding: 10px;"/>
+    <TextArea fx:id="commentsTextArea" promptText="Enter your comments here..." wrapText="true" style="-fx-padding: 10px;" prefHeight="100"/>
+    <Button text="Submit Comment" onAction="#submitComment"/>
+    <Button text="Back to Dashboard" onAction="#goBackToDashboard"/>
+</VBox>

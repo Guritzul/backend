@@ -1,0 +1,29 @@
+/* src/main/resources/css/styles.css */
+.root {
+    -fx-font-family: "Arial";
+}
+
+.button {
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333; /* Dark text */
+}
+
+.text-field, .password-field {
+    -fx-padding: 10px;
+    -fx-border-color: #ccc; /* Light gray border */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
